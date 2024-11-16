@@ -1,0 +1,82 @@
+/* Таблица с центральным выравниванием */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота экрана */
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    border: 3px solid #6a95ff; /* "Стенки" вокруг таблицы */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin: 0 auto;
+}
+
+table th, table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Разделительные линии */
+}
+
+table th {
+    background: #6a95ff; /* Цвет заголовков */
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9; /* Чередование цветов строк */
+}
+
+table tr:last-child td {
+    border-bottom: none; /* Убираем линию внизу таблицы */
+}
+table td {
+    white-space: nowrap; /* Текст в одну строку */
+    overflow: hidden; /* Обрезка текста, если он слишком длинный */
+    text-overflow: ellipsis; /* Многоточие для длинного текста */
+    max-width: 150px; /* Максимальная ширина ячейки */
+}
+/* Заголовок страницы */
+h1 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    margin-bottom: 20px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Полупрозрачный контейнер для содержимого */
+.container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #444;
+    margin-bottom: 20px;
+}
+/* Стиль для ячеек таблицы */

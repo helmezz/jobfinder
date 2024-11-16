@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список таблиц</title>
+</head>
+<body>
+    <h1>Список таблиц</h1>
+    <ul>
+        {% for table in table_names %}
+        <li><a href="{{ url_for('show_table', table_name=table) }}">{{ table }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

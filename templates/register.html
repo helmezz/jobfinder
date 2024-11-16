@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+        .form-container {
+            background: white;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            width: 400px;
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #2575fc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background: #1a5fcc;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Регистрация</h1>
+        <form method="POST">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Имя:</label>
+            <input type="text" name="first_name" required>
+            <label>Фамилия:</label>
+            <input type="text" name="last_name" required>
+            <label>Отчество:</label>
+            <input type="text" name="middle_name">
+            <label>Телефон:</label>
+            <input type="text" name="phone" required>
+            <label>Дата рождения:</label>
+            <input type="date" name="birthdate" required>
+            <label>Время рождения:</label>
+            <input type="time" name="birthtime" required>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
